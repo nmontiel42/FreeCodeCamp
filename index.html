@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="uft-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Page</title>
+  </head>
+  <body>
+    <h1 id="title">NekaWeb</h1>
+    <p id="description">Let me know more about you!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">
+          Enter Your Name:
+          <input required type="text" id="name" placeholder="Nekane Montiel">
+        </label>
+
+        <label for="email" id="email-label">
+          Enter Your Email:
+          <input required type="email" id="email" placeholder="youremail1@gmail.com">
+        </label>
+
+        <label for="number" id="number-label">
+          Enter Your Age:
+          <input id="number" type="number" min="10" max="99" placeholder="20">
+        </label>
+      </fieldset>
+
+      <fieldset>
+          <label for="dropdown"> What do you prefer?
+            <select id="dropdown" name="dropdown">
+              <option value="coffee">Coffee</option>
+              <option value="tea">Tea</option>
+            </select>
+          </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>How do you take it?</legend>
+            <label for="cold">
+              <input id="cold" class="inline" value="cold" name="recommendation" type="radio"> Cold
+            </label>
+            <label for="hot">
+              <input id="hot" class="inline" value="hot"name="recommendation" type="radio"> Hot
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>When do you take it?</legend>
+            <label for="time">
+              <input id="time" class="inline" value="morning" type="checkbox"> Morning
+            </label>
+            <label>
+              <input id="time" class="inline" value="noon" type="checkbox"> Noon
+            </label>
+            <label>
+              <input id="time" class="inline" value="afternoon" type="checkbox"> Afternoon
+            </label>
+            <label>
+              <input id="time" class="inline" value="evening" type="checkbox"> Evening
+            </label>
+      </fieldset>
+
+      <fieldset>
+        <label> Add Additional comments:
+          <textarea rows="3" colums="10" placeholder="I like..."></textarea>
+        </label>
+
+        <input type="submit" id="submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
